@@ -23,6 +23,7 @@ find_package(std_msgs REQUIRED)
 set(MSG_DEPS std_msgs)
 
 set(MSG_FILES
+"msg/CanFrame.msg"
 "msg/PowertrainData.msg"
 "msg/RaceControl.msg"
 "msg/ToRaptor.msg"
