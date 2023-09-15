@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(autonoma_msgs)
+project(can_msgs)
 
 # Default to C99
 if(NOT CMAKE_C_STANDARD)
@@ -23,13 +23,7 @@ find_package(std_msgs REQUIRED)
 set(MSG_DEPS std_msgs)
 
 set(MSG_FILES
-"msg/PowertrainData.msg"
-"msg/RaceControl.msg"
-"msg/ToRaptor.msg"
-"msg/VehicleData.msg"
-"msg/VehicleInputs.msg"
-"msg/GroundTruth.msg"
-"msg/GroundTruthArray.msg"
+"msg/Frame.msg"
 )
 
 rosidl_generate_interfaces(${PROJECT_NAME}
